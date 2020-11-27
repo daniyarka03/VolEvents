@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileExit"
+    android:background="#B98B9C"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/exit__title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/darker_grotesque"
+                android:text="Are you sure you want to sign out?"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_horizontal" />
+
+
+            <ImageView
+                android:id="@+id/exit_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_profile_exit"
+                android:layout_below="@id/exit__title"/>
+
+            <Button
+                android:id="@+id/sign_out_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exit_img"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="60dp"
+
+
+                android:layout_marginRight="40dp"
+                android:background="@drawable/rose_solid_button"
+                android:fontFamily="@font/darker_grotesque"
+                android:text="Sign Out"
+
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="26dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/exit_cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/white_outline_button_10"
+                android:fontFamily="@font/darker_grotesque"
+
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRose"
+                android:textSize="26dp"
+                android:layout_below="@+id/sign_out_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

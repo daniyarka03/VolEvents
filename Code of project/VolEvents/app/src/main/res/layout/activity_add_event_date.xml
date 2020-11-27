@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventDateActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#91B1C6"
+            android:paddingBottom="40dp"
+            >
+        <TextView
+            android:id="@+id/event_date__title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/darker_grotesque"
+            android:paddingLeft="20dp"
+            android:text="Event creation"
+            android:textColor="@color/colorWhite"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/event_date__img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/event_date__img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/event_date__title"
+
+        app:layout_constraintTop_toTopOf="@id/event_date__title"
+
+        android:src="@drawable/ic_date_img"
+
+      />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/event_date__block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/event_date__field_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/darker_grotesque"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Event date"
+            android:textColor="#000"
+            android:textSize="28sp"
+             />
+
+        <TextView
+            android:id="@+id/event_date__text_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_date__field_name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+
+            android:textSize="24sp"
+            android:textAlignment="center"
+
+            android:text=""
+            android:textAllCaps="false"
+
+
+
+
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/event_date__button_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/event_date__text_date"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/cloud_button"
+
+            android:fontFamily="@font/darker_grotesque"
+            android:text="Choose"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="26sp"
+
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/event_date__button_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/event_date__button_date"
+            android:background="@drawable/air_solid_button"
+            android:fontFamily="@font/darker_grotesque"
+
+            android:text="Next"
+
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="26dp"
+
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/event_date__button_prev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/dark_outline_button"
+            android:fontFamily="@font/darker_grotesque"
+            android:text="Back"
+            android:layout_below="@+id/event_date__button_next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorDark"
+            android:textSize="26dp"
+
+
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAir"
+    tools:context=".EventActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+                <TextView
+                    android:id="@+id/event__title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="44dp"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_marginTop="40dp"
+                    android:text="Changing the event"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="36dp"
+                    android:gravity="center_horizontal" />
+
+
+                <TextView
+                    android:id="@+id/event__name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="44dp"
+                    android:layout_below="@id/event__title"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_marginTop="40dp"
+                    android:text="Event name"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26dp"
+                    android:gravity="center_horizontal" />
+
+                <EditText
+                    android:id="@+id/event__name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CACACA"
+                    android:layout_below="@id/event__name"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:hint="Event name"
+                    android:textColorHint="#A5EFE5"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/event__white_form"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <TextView
+                    android:id="@+id/event__date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="40dp"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_marginTop="40dp"
+                    android:text="Event date"
+                    android:textColor="@color/colorAir"
+                    android:textSize="26dp" />
+
+
+                <TextView
+                    android:id="@+id/event__date_input"
+                    android:layout_width="match_parent"
+                    android:hint="Date"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C4C4C4"
+                    android:textColor="#000"
+                    android:layout_below="@id/event__date"
+                    android:layout_marginTop="25dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/darker_grotesque"
+
+                    android:paddingBottom="20dp"
+                    android:textColorHint="@color/colorLightAir"/>
+
+                <TextView
+                    android:id="@+id/event__time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="40dp"
+                    android:layout_below="@id/event__date_input"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_marginTop="40dp"
+                    android:text="Event time"
+                    android:textColor="@color/colorAir"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:id="@+id/event__time_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Time"
+                    android:layout_below="@id/event__time"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:textSize="20dp"
+
+                    android:backgroundTint="#C4C4C4"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:paddingBottom="20dp"
+                    android:textColorHint="@color/colorLightAir"/>
+
+                <TextView
+                    android:id="@+id/event__geolocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="40dp"
+                    android:layout_below="@id/event__time_input"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_marginTop="40dp"
+                    android:text="Event location"
+                    android:textColor="@color/colorAir"
+                    android:textSize="26dp" />
+
+                <EditText
+                    android:id="@+id/event__geolocation_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location"
+                    android:layout_below="@id/event__geolocation"
+                    android:backgroundTint="#C4C4C4"
+                    android:textColor="#000"
+
+                    android:fontFamily="@font/darker_grotesque"
+
+                    android:layout_marginTop="25dp"
+                    android:paddingBottom="20dp"
+                    android:textColorHint="@color/colorLightAir"/>
+
+                <TextView
+                    android:id="@+id/event__details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="40dp"
+                    android:layout_below="@id/event__geolocation_input"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_marginTop="40dp"
+                    android:text="Event details"
+                    android:textColor="@color/colorAir"
+                    android:textSize="26dp" />
+
+                <EditText
+                    android:id="@+id/event__food_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Free Food (Yes/No)"
+                    android:layout_below="@id/event__details"
+                    android:backgroundTint="#C4C4C4"
+                    android:textColor="#000"
+                    android:inputType="text"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:textSize="20dp"
+                    android:paddingBottom="20dp"
+                    android:textColorHint="@color/colorLightAir"/>
+
+
+                <EditText
+                    android:id="@+id/event__transport_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Free transport (Yes/No)"
+                    android:layout_below="@id/event__food_input"
+                    android:backgroundTint="#C4C4C4"
+                    android:textColor="#000"
+                    android:inputType="text"
+
+                    android:fontFamily="@font/darker_grotesque"
+
+                    android:layout_marginTop="25dp"
+                    android:paddingBottom="20dp"
+                    android:textColorHint="@color/colorLightAir"/>
+                <EditText
+                    android:id="@+id/event__equipment_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Free equipment (Yes/No)"
+                    android:layout_below="@id/event__transport_input"
+                    android:backgroundTint="#C4C4C4"
+                    android:textColor="#000"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:inputType="text"
+
+                    android:layout_marginTop="25dp"
+                    android:paddingBottom="20dp"
+                    android:textColorHint="@color/colorLightAir"/>
+                <EditText
+                    android:id="@+id/event__description_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:layout_below="@id/event__equipment_input"
+                    android:fontFamily="@font/darker_grotesque"
+
+                    android:backgroundTint="#C4C4C4"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:paddingBottom="20dp"
+                    android:textColorHint="@color/colorLightAir"/>
+                <Button
+                    android:id="@+id/event__button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/darker_grotesque"
+
+
+                    android:background="@drawable/air_solid_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:text="Change"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textSize="18dp"
+                    android:layout_below="@id/event__description_input"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

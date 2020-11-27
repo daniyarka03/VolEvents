@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.volunteerproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ProfileExit"></activity>
+        <activity
+            android:name=".BottomNavigationActivity"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity android:name=".ProfileEditPassword" />
+        <activity android:name=".ProfileEditEmail" />
+        <activity android:name=".ProfileEditBasicInfo" />
+        <activity android:name=".EventInfoActivity" />
+        <activity android:name=".SuccessAddedEventActivity" />
+        <activity android:name=".AddEventDescriptionActivity" />
+        <activity android:name=".AddEventEquipmentActivity" />
+        <activity android:name=".AddEventTransportActivity" />
+        <activity android:name=".AddEventFoodActivity" />
+        <activity android:name=".AddEventGeolocationActivity" />
+        <activity android:name=".AddEventTimeActivity" />
+        <activity android:name=".AddEventDateActivity" />
+        <activity android:name=".AddEventNameActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".WelcomeScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".RegisterActvity" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

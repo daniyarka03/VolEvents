@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2C32BE</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#00BFA6</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="statActivity__text">#9AB6FF</color>
+    <color name="textBlueColor">#2C32BE</color>
+    <color name="colorGreen">#51A280</color>
+    <color name="colorRed">#FF4F5A</color>
+    <color name ="colorGold">#BAB689</color>
+    <color name ="colorCloud">#B4C6D6</color>
+    <color name="colorPurple">#6C63FF</color>
+    <color name="colorSiren">#9691E1</color>
+    <color name ="colorGrass">#537451</color>
+    <color name = "colorBlack">#000000</color>
+    <color name = "colorAir">#80A9C3</color>
+    <color name = "colorDark">#3F3D56</color>
+    <color name = "colorRelax">#A0C2B4</color>
+    <color name = "colorStone">#A8A8A8</color>
+    <color name = "colorYellow">#F9A826</color>
+    <color name = "colorLightPink">#E3D4D4</color>
+    <color name = "colorPink">#D1AAAA</color>
+    <color name = "colorRose">#AC5272</color>
+    <color name = "colorViolet">#837AB7</color>
+    <color name = "colorLightAir">#B4C6D6</color>
+    <color name = "colorFormal">#536DFE</color>
+    <color name = "colorLeaf">#9AB17E</color>
+    <color name = "colorWater">#7CADC3</color>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventEquipmentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGold"
+                android:paddingBottom="80dp"
+                >
+
+            <TextView
+                android:id="@+id/event_equipment__title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/darker_grotesque"
+                android:paddingLeft="20dp"
+                android:text="Event creation"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/event_equipment__img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_equipment__title"
+            android:src="@drawable/ic_equipment"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/event_equipment__block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="@id/event_equipment__img">
+
+                <TextView
+                    android:id="@+id/event_equipment__field_name"
+                    android:gravity="center_horizontal"
+                    android:text="Free equipment?"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorGold"
+                    android:textSize="40sp"  />
+
+                <LinearLayout
+                    android:id="@+id/horizontal_block3"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="1.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/event_equipment__field_name">
+
+
+
+                <Button
+                    android:id="@+id/event_equipment__button_yes"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/event_equipment__field_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/gold_solid_button"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:text="Yes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/event_equipment__button_no"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/event_equipment__field_name"
+                    android:layout_weight="1.0"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/rose_solid_button"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:text="No"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26dp"
+                    android:textStyle="bold"  />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/event_equipment__button_prev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/gold_outline_button"
+                    android:fontFamily="@font/darker_grotesque"
+
+                    android:text="Back"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorGold"
+                    android:layout_below="@id/horizontal_block3"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

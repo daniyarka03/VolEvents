@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessAddedEventActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#9AB17E"
+       android:paddingBottom="40dp">
+
+       <TextView
+           android:id="@+id/success_event__title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:fontFamily="@font/darker_grotesque"
+           android:paddingLeft="20dp"
+           android:text="Event creation"
+           android:textColor="@color/colorWhite"
+           android:textSize="36sp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="@id/success_event__img"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/success_event__img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_event_done"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/success_event__title"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+   </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/success_event__text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/darker_grotesque"
+
+                android:gravity="center_horizontal"
+                android:text="The event was successfully created!"
+                android:textAlignment="center"
+
+                android:textColor="#000"
+                android:textSize="34dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <Button
+        android:id="@+id/success_event__button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="60dp"
+
+        android:layout_marginRight="30dp"
+         android:textStyle="bold"
+        android:background="@drawable/leaf_solid_button"
+
+
+        android:fontFamily="@font/darker_grotesque"
+        android:layout_below="@id/success_event__text"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+
+        android:textSize="26sp"
+
+                />
+           </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

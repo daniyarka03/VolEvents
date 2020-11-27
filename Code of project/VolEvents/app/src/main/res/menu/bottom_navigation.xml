@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        />
+    <item
+        android:id="@+id/eventsFragment"
+        android:title="Schedule"
+        android:icon="@drawable/icon__model"
+        />
+    <item
+        android:id="@+id/helpFragment"
+        android:title="Help"
+        android:icon="@drawable/ic_help_outline_black_24dp"/>
+</menu>

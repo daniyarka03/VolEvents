@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventDescriptionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightAir"
+                android:paddingBottom="40dp">
+
+            <TextView
+                android:id="@+id/event_description__title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/darker_grotesque"
+                android:paddingLeft="20dp"
+                android:text="Event creation"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="36sp"
+
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/event_description__img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/event_description__title"
+                android:src="@drawable/ic_description"
+               />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/event_description__block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/event_description__field_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="Description of the event"
+                    android:textColor="#000"
+                    android:textSize="28sp"
+                    app:layout_constraintBottom_toBottomOf="@id/event_description__field"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                     />
+
+                <EditText
+                    android:id="@+id/event_description__field"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/event_description__field_name"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="40dp"
+                    android:textSize="28sp"
+                    android:backgroundTint="#B0B0B0"
+                    android:fontFamily="@font/darker_grotesque"
+
+
+                    android:paddingBottom="20dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/event_description__button_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+
+                android:background="@drawable/formal_solid_button"
+                android:fontFamily="@font/darker_grotesque"
+
+                android:text="Submit"
+
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="26dp"
+
+
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/event_description__button_prev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="40dp"
+
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/formal_outline_button"
+
+                android:fontFamily="@font/darker_grotesque"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="@color/colorFormal"
+                android:textSize="26dp"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

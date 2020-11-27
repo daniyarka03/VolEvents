@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventInfoActivity">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical" >
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       >
+
+         <TextView
+                           android:id="@+id/event_info__title"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:fontFamily="@font/darker_grotesque"
+                           android:paddingLeft="20dp"
+                           android:text="Event information"
+                           android:textStyle="bold"
+                           android:textColor="@color/colorBlack"
+                           android:textSize="36sp"/>
+
+
+         <ImageView
+                    android:id="@+id/festival_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_festival"
+                    android:layout_below="@id/event_info__title"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp"
+             android:layout_marginBottom="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+</RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/ic_event_info_background">
+
+
+
+                       <TextView
+                           android:id="@+id/info__name"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentStart="true"
+                           android:layout_alignParentLeft="true"
+                           android:layout_marginStart="40dp"
+                           android:layout_marginRight="50dp"
+                           android:layout_marginEnd="80dp"
+                           android:layout_marginLeft="40dp"
+                           android:layout_marginTop="20dp"
+                           android:fontFamily="@font/darker_grotesque"
+                           android:text="Event Name"
+                           android:textColor="@color/colorWhite"
+                           android:textSize="30sp"
+                           android:textStyle="bold" />
+
+                       <RelativeLayout
+                           android:id="@+id/block_1"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/white_outline_button_10"
+                           android:layout_marginRight="200dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginTop="25dp"
+                           android:layout_below="@+id/info__name">
+
+                           <TextView
+                               android:id="@+id/info__date"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentTop="true"
+                               android:fontFamily="@font/darker_grotesque"
+                               android:gravity="center_horizontal"
+                               android:layout_marginTop="5dp"
+                               android:text="{{ Event date }}"
+                               android:textAlignment="center"
+                               android:textColor="@color/colorWhite"
+                               android:textSize="18sp" />
+
+                       <TextView
+                           android:id="@+id/info__time"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/darker_grotesque"
+                           android:layout_marginTop="15dp"
+
+                           android:gravity="center_horizontal"
+                           android:text="{{ Event time }}"
+                           android:textAlignment="center"
+                           android:textColor="@color/colorWhite"
+                           android:layout_below="@id/info__date"
+                           android:textSize="18sp"
+                           />
+                       <TextView
+                           android:id="@+id/info__geolocation"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="15dp"
+                           android:gravity="center_horizontal"
+                           android:text="{{ Location }}"
+                           android:layout_marginBottom="5dp"
+                           android:layout_below="@id/info__time"
+                           android:textAlignment="center"
+                           android:textColor="@color/colorWhite"
+                           android:fontFamily="@font/darker_grotesque"
+
+                           android:textSize="18sp"
+
+                           />
+                       </RelativeLayout>
+
+                   <TextView
+                       android:id="@+id/info__title_description"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Description"
+                       android:textStyle="bold"
+                       android:textColor="@color/colorWhite"
+                       android:layout_marginTop="25dp"
+                       android:textAlignment="center"
+                       android:layout_below="@id/block_1"
+                       android:fontFamily="@font/darker_grotesque"
+                       android:textSize="24sp"
+
+
+
+                       android:gravity="center_horizontal" />
+
+
+                      <RelativeLayout
+                          android:id="@+id/block_2"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/info__title_description"
+                          android:background="@drawable/white_outline_button_10"
+                          android:layout_marginTop="25dp"
+                          android:layout_marginLeft="100dp"
+                          android:layout_marginRight="100dp">
+                       <TextView
+                           android:id="@+id/info__description"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+
+                           android:layout_marginStart="0dp"
+                           android:layout_marginLeft="0dp"
+                           android:paddingRight="10dp"
+                           android:paddingLeft="10dp"
+                           android:paddingTop="10dp"
+                           android:paddingBottom="10dp"
+                           android:layout_marginEnd="0dp"
+
+                           android:layout_marginRight="0dp"
+                           android:fontFamily="@font/darker_grotesque"
+
+                           android:text="{{ Description }}"
+                           android:textAlignment="center"
+                           android:textColor="@color/colorWhite"
+                           android:textSize="18sp"
+                           android:gravity="center_horizontal" />
+
+                      </RelativeLayout>
+
+
+
+
+
+                   <TextView
+                       android:id="@+id/info__other"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="30dp"
+                       android:gravity="center_horizontal"
+                       android:text="Other"
+                       android:textAlignment="center"
+                       android:fontFamily="@font/darker_grotesque"
+                       android:layout_below="@id/block_2"
+                       android:textColor="@color/colorWhite"
+                       android:textStyle="bold"
+
+                       android:textSize="24sp"
+                       />
+
+                   <RelativeLayout
+                       android:id="@+id/block_others"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/info__other"
+                       android:background="@drawable/white_outline_button_10"
+                       android:layout_marginLeft="100dp"
+                       android:layout_marginTop="25dp"
+                       android:layout_marginRight="100dp"
+
+                       android:layout_marginBottom="40dp">
+                       <TextView
+                       android:id="@+id/info__food"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:gravity="center_horizontal"
+                       android:text="{{ Food }}"
+                       android:textAlignment="center"
+                       android:textColor="@color/colorWhite"
+                       android:fontFamily="@font/darker_grotesque"
+
+                       android:textSize="18sp"
+
+                       />
+
+                   <TextView
+                       android:id="@+id/info__transport"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/info__food"
+                       android:layout_marginTop="5dp"
+                       android:gravity="center_horizontal"
+                       android:text="{{ Transport }}"
+                       android:textAlignment="center"
+                       android:textColor="@color/colorWhite"
+                       android:fontFamily="@font/darker_grotesque"
+
+                       android:textSize="18sp"
+                       />
+
+                   <TextView
+                       android:id="@+id/info__equipment"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/info__transport"
+                       android:layout_marginTop="5dp"
+                       android:gravity="center_horizontal"
+                       android:text="{{ Equipment }}"
+                       android:textAlignment="center"
+                       android:textColor="@color/colorWhite"
+                       android:layout_marginBottom="5dp"
+                       android:fontFamily="@font/darker_grotesque"
+
+                       android:textSize="18sp"
+                       />
+                   </RelativeLayout>
+
+                       <TextView
+                           android:id="@+id/info_contact"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/block_others"
+                           android:text="{{ Contact With }}"
+                           android:layout_marginBottom="50dp"
+                           android:textAlignment="center"
+                           android:textColor="@color/colorWhite"
+                           android:fontFamily="@font/darker_grotesque"
+                           android:textSize="20sp"
+                           android:gravity="center_horizontal"
+
+                          />
+
+                   </RelativeLayout>
+               </LinearLayout>
+           </ScrollView>
+       </RelativeLayout>
+</RelativeLayout>

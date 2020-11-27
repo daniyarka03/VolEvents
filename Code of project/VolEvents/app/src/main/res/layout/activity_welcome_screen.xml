@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5F94A5"
+    tools:context=".WelcomeScreenActivity">
+
+    <ImageView
+        android:id="@+id/welcome__logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_logotype"
+        app:layout_constraintBottom_toTopOf="@+id/welcome__title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/welcome__title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/darker_grotesque"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.17"
+        android:textStyle="bold"
+        android:text="VolEvents"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="48sp"
+        app:layout_constraintTop_toBottomOf="@+id/welcome__logo"
+ />
+
+
+
+
+    <TextView
+
+        android:id="@+id/welcome_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="VolEvents - committed to charitable events"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome__title"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/welcome_dream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ic_dream"
+        app:layout_constraintBottom_toTopOf="@+id/next__button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_slogan" />
+
+
+    <Button
+        android:id="@+id/next__button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/welcome_screen_button"
+        android:fontFamily="@font/darker_grotesque"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

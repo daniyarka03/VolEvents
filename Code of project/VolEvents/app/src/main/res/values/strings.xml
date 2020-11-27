@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">VolEvents</string>
+    
+    <string-array name="yn">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bottom_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

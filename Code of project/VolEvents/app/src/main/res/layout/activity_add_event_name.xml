@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    tools:context=".AddEventNameActivity"
+    android:id="@+id/fragmentName">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrass"
+                android:paddingBottom="40dp">
+            <TextView
+                android:id="@+id/event_name__title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/darker_grotesque"
+                android:paddingLeft="20dp"
+                android:text="Event creation"
+                android:textColor="@color/colorWhite"
+
+                android:textSize="36sp"
+
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/event_name__img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/event_name__img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/event_name__title"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+
+                    android:src="@drawable/ic_event_name"
+                    app:layout_constraintTop_toTopOf="@id/event_name__title" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/event_name__block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="@id/event_name__img">
+
+                <TextView
+                    android:id="@+id/event_name__field_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="Event title"
+                    android:textColor="#000"
+                    android:textSize="28dp"
+                    app:layout_constraintBottom_toBottomOf="@id/event_name__field"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteY="417dp" />
+
+                <EditText
+                    android:id="@+id/event_name__field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_below="@id/event_name__field_name"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="40dp"
+                    android:backgroundTint="#B0B0B0"
+                    android:inputType="text"
+                    android:paddingBottom="20dp"
+
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/event_name__field_name"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="458dp" />
+
+                <Button
+                    android:id="@+id/event_name__button_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/event_name__field"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/black_solid_button"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:text="Next"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/event_name__button_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="40dp"
+
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/black_outline_button"
+                    android:fontFamily="@font/darker_grotesque"
+
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="26dp"
+                    android:layout_below="@+id/event_name__button_next"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                     />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

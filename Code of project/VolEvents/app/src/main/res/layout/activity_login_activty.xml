@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                >
+
+                <ImageView
+                    android:id="@+id/door"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_door_login"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    />
+                <ImageView
+                    android:id="@+id/wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_wave"
+
+                    android:layout_below="@id/door"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="-40dp"
+                android:paddingTop="50dp"
+                android:background="@drawable/white_solid_tab"
+                >
+
+
+                <TextView
+                    android:id="@+id/login__title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="-10dp"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:gravity="center_horizontal"
+                    android:text="Authorization"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/login__email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#BABABA"
+                    android:hint="Email"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@+id/login__title"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000"
+                    android:textColorHint="#BABABA"
+                    android:textSize="18sp" />
+
+
+
+  <EditText
+                    android:id="@+id/login__password"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#BABABA"
+                    android:textColorHint="#BABABA"
+                    android:layout_below="@+id/login__email"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#000"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/login__button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cloud_button"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:text="Log In"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/login__password"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/login__forgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:text="Forgot your password?"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/login__button"
+                    android:textAlignment="center"
+                    android:textColor="#BABABA" />
+
+                <Button
+                    android:id="@+id/login__button_reg"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/login__forgotPassword"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/purple_registration"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:text="Create Account"
+                    android:layout_marginTop="30dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPurple"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

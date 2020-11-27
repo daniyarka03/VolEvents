@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HelpFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:id="@+id/help__title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Help"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="50dp"
+                    android:textSize="30sp"
+                     />
+
+                <ImageView
+                    android:id="@+id/help_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_idea"
+                    android:layout_below="@+id/help__title"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/app_use"
+                    android:text="How to use app"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_below="@+id/help_img"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:gravity="center_horizontal" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/help_block_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/app_use"
+                    android:background="@drawable/yellow_solid_button"
+                    android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/help__text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How do I add events?"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="20dp"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:layout_marginLeft="20dp"
+                     />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/help_1"
+                        android:layout_below="@id/help__text_1"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_help_1"/>
+
+                <TextView
+                    android:id="@+id/help__text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To add an event, you first need to do the following steps:"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="26sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@id/help_1"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:textColor="@color/colorWhite"
+                    />
+                    <TextView
+                        android:id="@+id/help__text_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1). Go to the menu."
+                        android:layout_marginLeft="20dp"
+                        android:textSize="26sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/help__text_2"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <TextView
+                        android:id="@+id/help__text_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2). We go to the list of events."
+                        android:layout_marginLeft="20dp"
+                        android:textSize="26sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/help__text_3"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <TextView
+                        android:id="@+id/help__text_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3). Follow all the steps for adding an event."
+                        android:layout_marginLeft="20dp"
+                        android:textSize="26sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/help__text_4"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                    <TextView
+                        android:id="@+id/help__text_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4). At the end, click Submit ."
+                        android:layout_marginLeft="20dp"
+                        android:textSize="26sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/help__text_5"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/help_block_1"
+                    android:background="@drawable/grass_solid_button"
+                    android:layout_marginTop="80dp">
+                    <TextView
+                        android:id="@+id/help__text_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How do I change my profile information?"
+
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="20dp"
+                        android:textSize="30sp"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:layout_marginLeft="20dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/help_2"
+                        android:layout_below="@id/help__text_7"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_help_2"/>
+                    <TextView
+                        android:id="@+id/help__text_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1). Go to your Profile."
+                        android:layout_marginLeft="20dp"
+                        android:textSize="26sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/help_2"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <TextView
+                        android:id="@+id/help__text_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2). Change information."
+                        android:layout_marginLeft="20dp"
+                        android:textSize="26sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/help__text_8"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <TextView
+                        android:id="@+id/help__text_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3). We select the item we need from the menu."
+                        android:layout_marginLeft="20dp"
+                        android:textSize="26sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/help__text_9"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                    <TextView
+                        android:id="@+id/help__text_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4). Change to new data."
+                        android:layout_marginLeft="20dp"
+                        android:textSize="26sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@id/help__text_10"
+                        android:fontFamily="@font/darker_grotesque"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginBottom="20dp"
+
+                        />
+
+
+
+
+
+
+
+                    <!--                    <TextView-->
+<!--                        android:id="@+id/help__text_8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="1). Заходим в Профиль-->
+<!--2). Изменить информацию-->
+<!--3). Выбираем в меню нужный нам пункт.-->
+<!--4). Изменяем на новые данные."-->
+<!--                        android:layout_below="@id/help__text_"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="30sp"-->
+<!--                        android:textStyle="italic" />-->
+
+
+
+
+
+                </RelativeLayout>
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/help__text_5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Как изменить мероприятие?"-->
+<!--                    android:layout_below="@id/help__text_4"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/help__text_6"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="1). Заходим в список мероприятий.-->
+<!--2). Выбираем и зажимаем нам нужное мероприятие.-->
+<!--3). Нажимаем на “Изменить”-->
+<!--4). Меняем данные и нажимаем сохранить"-->
+<!--                    android:layout_below="@id/help__text_5"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:textStyle="italic" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/help__text_7"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/help__text_6"-->
+<!--                    android:text="Как удалять мероприятия?"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/help__text_8"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/help__text_7"-->
+<!--                    android:text="-->
+<!--1). Заходим в список мероприятий.-->
+<!--2). Выбираем и зажимаем нам нужное мероприятие.-->
+<!--3). Нажимаем на “Удалить”-->
+<!--4). Удаляем."-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="30sp"-->
+<!--                    android:textStyle="italic" />-->
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

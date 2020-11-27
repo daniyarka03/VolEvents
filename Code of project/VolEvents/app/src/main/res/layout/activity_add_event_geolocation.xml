@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventGeolocationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightPink"
+            android:paddingBottom="40dp">
+        <TextView
+            android:id="@+id/event_geolocation__title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/darker_grotesque"
+            android:paddingLeft="20dp"
+            android:text="Event creation"
+
+            android:textColor="#000"
+            android:textSize="36sp"
+
+            android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/event_geolocation__img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/event_geolocation__title"
+        android:src="@drawable/ic_location"
+
+         />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/event_geolocation__block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/event_geolocation__img"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/event_geolocation__field_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/darker_grotesque"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Location of the event"
+            android:textColor="#000"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="@id/event_geolocation__field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/event_geolocation__field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_geolocation__field_name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/darker_grotesque"
+            android:textSize="28sp"
+            android:inputType="text"
+            android:backgroundTint="#B0B0B0"
+            android:paddingBottom="20dp" />
+        <Button
+            android:id="@+id/event_geolocation__button_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+
+            android:background="@drawable/yellow_solid_button"
+            android:fontFamily="@font/darker_grotesque"
+            android:layout_below="@+id/event_geolocation__field"
+            android:text="Next"
+
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="26dp"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/event_geolocation__button_prev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/event_geolocation__button_next"
+            android:background="@drawable/dark_outline_button"
+            android:fontFamily="@font/darker_grotesque"
+
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/colorDark"
+            android:textSize="26dp"
+
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/event_geolocation__button_next" />
+
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>

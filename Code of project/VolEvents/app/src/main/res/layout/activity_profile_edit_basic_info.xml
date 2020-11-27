@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileEditBasicInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#51A280"
+            android:paddingBottom="80dp">
+
+            <TextView
+                android:id="@+id/basic_info__title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/darker_grotesque"
+                android:text="Change basic information"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_horizontal" />
+
+            <ImageView
+                android:id="@+id/basic_info__img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_basic_info"
+                android:layout_below="@id/basic_info__title"
+                android:layout_marginTop="80dp"
+                />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/basic_info__name_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="26dp"
+                    android:backgroundTint="#D8D8D8"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:hint="Name"
+                    android:paddingBottom="18dp" />
+
+                <EditText
+                    android:id="@+id/basic_info__lastname_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/basic_info__name_field"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="26dp"
+                    android:backgroundTint="#D8D8D8"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:hint="LastName"
+                    android:paddingBottom="18dp" />
+
+                <Button
+                    android:id="@+id/basic_info__change_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/basic_info__lastname_field"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="26dp"
+                    android:background="@drawable/event_name__button_form"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:text="Change"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/basic_info__cancel_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/basic_info__change_button"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/event_name__button_form_red"
+                    android:fontFamily="@font/darker_grotesque"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26sp" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
