@@ -4,7 +4,7 @@ Mobile App Development
 
 by Orazov Daniyar and Sultonov Rustam
 
-VolApp is a social app that can help organizers post their charity and other events to an app that will be visible to all registered users. It will also be convenient for volunteers who do not know about upcoming events, who can find events to their liking in the application.
+VolEvents is a social app that can help organizers post their charity and other events to an app that will be visible to all registered users. It will also be convenient for volunteers who do not know about upcoming events, who can find events to their liking in the application.
 
 This application is written in the Java programming language in the Android Studio development environment.
 
