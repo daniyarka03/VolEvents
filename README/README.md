@@ -2,7 +2,7 @@
 
 Mobile App Development
 
-by Orazov Daniyar and Sultonov Rustam
+by Orazov Daniyar, Sultonov Rustam, Shakirzhan Turgautov
 
 VolEvents is a social app that can help organizers post their charity and other events to an app that will be visible to all registered users. It will also be convenient for volunteers who do not know about upcoming events, who can find events to their liking in the application.
 
@@ -15,6 +15,7 @@ This application is written in the Java programming language in the Android Stud
 ## Authors:
 * Sultonov Rustam - user interface development, back-end
 * Orazov Daniyar - working with the database, back-end
+* Shakirzhan Turgautov - Project manager
 
 ## Built with
 * The database is hosted on Google Firebase
